@@ -39,6 +39,33 @@ pnpm build
 
 ---
 
+## Deploy to GitHub Pages
+
+This portfolio is configured for automatic deployment to GitHub Pages.
+
+### Setup (One-time)
+
+1. Push your code to a GitHub repository
+2. Go to your repo's **Settings → Pages**
+3. Under "Build and deployment", set **Source** to **GitHub Actions**
+4. Push to `main` branch - the site will deploy automatically
+
+### Manual Deployment
+
+You can also trigger a deployment manually:
+1. Go to **Actions** tab in your GitHub repo
+2. Select "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
+
+### Your Site URL
+
+After deployment, your site will be available at:
+```
+https://<your-username>.github.io/<repo-name>/
+```
+
+---
+
 ## How to Add a New Section
 
 All sections are defined in `client/src/pages/Home.tsx`.
