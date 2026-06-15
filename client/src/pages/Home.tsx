@@ -5,18 +5,12 @@ import {
   ExternalLink, 
   Linkedin, 
   Mail, 
-  Award, 
-  Briefcase, 
-  BookOpen, 
-  Code2, 
-  GraduationCap,
-  Lightbulb,
-  Mic,
+  Award,
+  Briefcase,
   Beaker,
   Zap,
   MessageSquare,
   BarChart3,
-  Trophy,
   Brain,
   Sparkles,
   Link2,
@@ -36,26 +30,30 @@ const heroStatsData = [
     icon: "medal",
   },
   { 
-    label: "Accuracy", 
-    value: "80%", 
-    badge: "NLP, T5 Transformer",
+    label: "thesis precision",
+    value: "80%",
+    badge: "Spider benchmark · +39%",
     badgeColor: "text-emerald-600",
     href: "#research",
     bgColor: "bg-emerald-100",
     icon: "chart",
   },
-  { 
-    label: "Years as AI Engineer", 
-    value: "2+", 
+  {
+    label: "as AI Engineer",
+    value: "4+ yrs",
+    badge: "Generative AI & LLMs",
+    badgeColor: "text-blue-600",
     href: "#experience",
     bgColor: "bg-blue-100",
     icon: "briefcase",
   },
   { 
-    label: "Certifications", 
-    value: "5+", 
+    label: "certifications",
+    value: "7",
+    badge: "Microsoft · Anthropic",
+    badgeColor: "text-violet-600",
     href: "#certifications",
-    bgColor: "bg-primary/10",
+    bgColor: "bg-violet-100",
     icon: "award",
   },
 ];
@@ -90,6 +88,7 @@ const researchInterests = [
 
 // Awards Data
 const awardsData = [
+  { title: "Enabler Award", issuer: "Data Science Dojo", year: "2024", description: "Contribution to team capability, mentorship, and high-performance delivery", emoji: "🌟" },
   { title: "DOT Awards (4x)", issuer: "Data Science Dojo", year: "2023-2025", description: "Quarterly recognition for Delivery Ownership and Trust", emoji: "🏆" },
   { title: "Giant Leap Award", issuer: "Data Science Dojo", year: "2024", description: "Exceptional innovation in AI product development", emoji: "🚀" },
   { title: "Bronze Medal", issuer: "NED University", year: "2023", description: "Ranked 3rd among 152 graduates in Computer Systems Engineering", emoji: "🥉" },
@@ -99,7 +98,12 @@ const awardsData = [
 // Publications Data
 const webinarsData = [
   {
-    title: "Master Agentic AI: Event-Driven LlamaIndex Workflows",
+    title: "Scaling AI Beyond Single Agents: Multi-Agent Architectures with LangChain",
+    year: "2026",
+    link: "https://datasciencedojo.com/tutorial/multi-agent-ai-langchain/",
+  },
+  {
+    title: "Master Agentic AI: Deep Dive into Event-Driven LlamaIndex Workflows",
     year: "2025",
     link: "https://datasciencedojo.com/tutorial/agentic-ai-llamaindex-workflows/",
   },
@@ -128,37 +132,50 @@ const articlesData = [
 // Projects Data
 const projectsData = [
   {
-    title: "ReAct Agent Workflow",
-    subtitle: "Event-driven AI agent",
-    description: "Event-driven ReAct agent implementing reasoning and action patterns with modular tool integration, stateful conversation memory, and graceful error recovery for production deployment.",
-    tech: ["LlamaIndex", "Azure OpenAI"],
+    title: "Multi-Agent Deep Agent with Skills",
+    subtitle: "Agentic AI architecture",
+    description: "Planning-oriented deep agent with a custom skill framework using a progressive-disclosure strategy, enabling dynamic multi-agent coordination, tool use, and autonomous task decomposition.",
+    tech: ["LangChain", "Multi-Agent", "Azure OpenAI"],
+    link: "https://github.com/IzmaAziz/Multi_Agent_Deep_Agent_With_Skills_Demo",
+    iconColor: "bg-violet-500",
+    icon: "brain",
+  },
+  {
+    title: "Event-Driven Agentic AI System",
+    subtitle: "ReAct reasoning & action",
+    description: "Event-driven ReAct agent implementing reasoning-and-action patterns with modular tool integration, stateful conversation memory, and graceful error recovery using LlamaIndex workflows.",
+    tech: ["LlamaIndex", "Agentic AI", "Azure OpenAI"],
     link: "https://github.com/IzmaAziz/ReAct-Agent-Workflow-Llama-Index",
     iconColor: "bg-blue-500",
+    icon: "zap",
   },
   {
-    title: "RAG Chatbot",
-    subtitle: "Retrieval-augmented conversational AI",
-    description: "RAG-based chatbot grounding LLM responses in uploaded documents using dense embeddings and hybrid retrieval with conversation memory and source attribution.",
-    tech: ["LangChain", "ChromaDB"],
+    title: "Intelligent Document Assistant",
+    subtitle: "Retrieval-augmented generation",
+    description: "RAG system grounding LLM responses in uploaded documents using dense embeddings and hybrid retrieval with semantic reranking, conversation memory, and source attribution.",
+    tech: ["RAG", "LangChain", "ChromaDB"],
     link: "https://github.com/IzmaAziz/Building-Simple-and-Efficient-Chatbots-Demo",
     iconColor: "bg-emerald-500",
+    icon: "message",
   },
   {
-    title: "Genome Prediction",
+    title: "Neural Genome Sequence Prediction",
     subtitle: null,
     badge: "Runner-Up",
-    description: "ML pipeline for genomic sequence classification using feature engineering (k-mer frequencies, GC content) and ensemble methods. Runner-up at FAST DevDay 2022 hackathon.",
+    description: "ML pipeline for genomic sequence classification using feature engineering (k-mer frequencies, GC content) and ensemble methods. Runner-up at FAST DevDay 2022 research hackathon.",
     tech: ["Machine Learning", "Python"],
     link: "https://github.com/IzmaAziz/DevDay-Competition-Submission-Runner-Up",
     iconColor: "bg-amber-500",
+    icon: "beaker",
   },
   {
-    title: "PSO Algorithm",
-    subtitle: "Optimization technique",
-    description: "Vectorized implementation of PSO metaheuristic with configurable parameters, benchmarked on standard test functions (Rastrigin, Rosenbrock, Sphere) with convergence visualization.",
+    title: "Particle Swarm Optimization",
+    subtitle: "Metaheuristic optimization",
+    description: "Vectorized implementation of the PSO metaheuristic with configurable parameters, benchmarked on standard test functions (Rastrigin, Rosenbrock, Sphere) with convergence analysis and visualization.",
     tech: ["Optimization", "Python"],
     link: "https://github.com/IzmaAziz/Partical-Swarm-Optimization-Algorithm",
-    iconColor: "bg-violet-500",
+    iconColor: "bg-indigo-500",
+    icon: "chart",
   },
 ];
 
@@ -169,6 +186,7 @@ const certificationsData = [
   { name: "Azure AI Engineer Associate", issuer: "Microsoft", link: "https://learn.microsoft.com/api/credentials/share/en-us/IzmaAziz-0126/F46BCFEC40C00DA4?sharingId" },
   { name: "Azure Data Engineer Associate", issuer: "Microsoft", link: "https://learn.microsoft.com/api/credentials/share/en-us/IzmaAziz-0126/DE327E2B45D8B967?sharingId" },
   { name: "Azure Fundamentals", issuer: "Microsoft", link: "https://learn.microsoft.com/api/credentials/share/en-us/IzmaAziz-0126/D3DA20970920CA55?sharingId" },
+  { name: "Building with the Claude API", issuer: "Anthropic", link: "https://verify.skilljar.com/c/4knpgeeorjzc" },
   { name: "Neural Networks and Deep Learning", issuer: "DeepLearning.AI", link: "https://coursera.org/verify/W8YJ8S7WJ33K" },
 ];
 
@@ -204,7 +222,7 @@ const itemVariants = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-foreground">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50/70 via-slate-50 to-slate-100 text-foreground overflow-x-hidden">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -222,7 +240,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="about" className="relative bg-gradient-to-br from-blue-50 to-white py-16 md:py-24">
+      <section id="about" className="relative py-16 md:py-24">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             className="grid lg:grid-cols-2 gap-12 items-start"
@@ -237,7 +255,7 @@ export default function Home() {
                 Hi, I'm Izma Aziz
               </h1>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Software Engineer at Data Science Dojo, building production-ready Multi-Agentic Systems and Generative AI Features. Bronze Medalist from NED University, seeking graduate opportunities to advance my research in AI and Computer Systems.
+                Senior Software Engineer at Data Science Dojo, building production-ready Multi-Agentic Systems and Generative AI Features. Bronze Medalist from NED University, seeking graduate opportunities to advance my research in AI and Computer Systems.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <Button asChild className="bg-primary hover:bg-primary/90">
@@ -261,12 +279,12 @@ export default function Home() {
                   href={stat.href}
                   className="block"
                 >
-                  <Card className="p-4 hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer h-full">
+                  <Card className="p-4 border-l-4 border-primary hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer h-full">
                     <div className={`w-10 h-10 ${stat.bgColor} rounded-lg flex items-center justify-center mb-3`}>
                       {stat.icon === "medal" && <Award className="w-5 h-5 text-amber-600" />}
                       {stat.icon === "chart" && <BarChart3 className="w-5 h-5 text-emerald-600" />}
                       {stat.icon === "briefcase" && <Briefcase className="w-5 h-5 text-blue-600" />}
-                      {stat.icon === "award" && <Award className="w-5 h-5 text-primary" />}
+                      {stat.icon === "award" && <Award className="w-5 h-5 text-violet-600" />}
                     </div>
                     <div className="text-2xl font-bold text-foreground">{stat.value}</div>
                     <div className="text-xs text-muted-foreground">{stat.label}</div>
@@ -282,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-white">
+      <section id="experience" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -290,12 +308,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                <Briefcase className="w-5 h-5 text-blue-600" />
-              </div>
-              Experience
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Career</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Experience</h2>
           </motion.div>
 
           <motion.div
@@ -307,14 +321,14 @@ export default function Home() {
           >
             {/* Main Experience Card */}
             <motion.div variants={itemVariants} className="lg:col-span-3">
-              <Card className="p-8 bg-white">
+              <Card className="p-8 border-l-4 border-primary hover:shadow-lg transition-shadow">
                 <div className="flex items-start justify-between mb-6">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <h3 className="text-xl font-bold text-foreground">Software Engineer — Generative AI</h3>
+                      <h3 className="text-xl font-bold text-foreground">Senior Software Engineer — Generative AI</h3>
                       <Badge className="bg-blue-100 text-blue-700 border-0">Current</Badge>
                     </div>
-                    <p className="text-muted-foreground">Data Science Dojo • Sep 2023 – Present</p>
+                    <p className="text-muted-foreground">Data Science Dojo • Dec 2023 – Present</p>
                   </div>
                 </div>
                 
@@ -360,17 +374,17 @@ export default function Home() {
             
             {/* Side Stats */}
             <motion.div variants={itemVariants} className="lg:col-span-2 space-y-4">
-              <Card className="p-6">
-                <div className="text-3xl font-bold text-primary">2+</div>
+              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="text-3xl font-bold text-primary">4+</div>
                 <div className="text-muted-foreground text-sm">Years of Experience</div>
               </Card>
-              <Card className="p-6">
-                <div className="text-3xl font-bold text-primary">5+</div>
+              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="text-3xl font-bold text-primary">7+</div>
                 <div className="text-muted-foreground text-sm">Team Members Led</div>
               </Card>
-              <Card className="p-6">
-                <div className="text-3xl font-bold text-primary">4+</div>
-                <div className="text-muted-foreground text-sm">AI Solutions Delivered</div>
+              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="text-3xl font-bold text-primary">10+</div>
+                <div className="text-muted-foreground text-sm">Enterprise Clients</div>
               </Card>
             </motion.div>
           </motion.div>
@@ -378,7 +392,7 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-slate-50">
+      <section id="education" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -386,12 +400,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                <GraduationCap className="w-5 h-5 text-amber-600" />
-              </div>
-              Education
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Background</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Education</h2>
           </motion.div>
 
           <motion.div
@@ -445,7 +455,7 @@ export default function Home() {
       </section>
 
       {/* Research Section */}
-      <section id="research" className="py-20 bg-white">
+      <section id="research" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -453,12 +463,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-5 h-5 text-emerald-600" />
-              </div>
-              Research
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Research Focus</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Research</h2>
           </motion.div>
 
           <motion.div
@@ -475,7 +481,7 @@ export default function Home() {
                     <Badge className="bg-emerald-500/20 text-emerald-400 border-0 mb-4">Undergraduate Thesis</Badge>
                     <h3 className="text-2xl lg:text-3xl font-bold mb-4">Smart SQL Query Generator</h3>
                     <p className="text-slate-300 leading-relaxed mb-6">
-                      Developed a fine-tuned T5 transformer model for translating natural language questions to executable SQL queries. Introduced a novel synonym-based data augmentation strategy and schema-aware positional embeddings to improve generalization. Achieved 80% exact-match precision on the Spider benchmark, a 39% relative improvement over baseline, with strong transfer performance on WikiSQL.
+                      As group leader, developed a fine-tuned T5 transformer for translating natural language questions into executable SQL queries. Introduced schema-aware input formatting, synonym-based data augmentation, and hyperparameter tuning to improve generalization. Achieved 80% ROUGE precision on the Spider benchmark — a 39% improvement over baseline, outperforming BERT and SQLNet — with strong transfer performance on WikiSQL.
                     </p>
                     
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -518,7 +524,7 @@ export default function Home() {
                     shield: Shield,
                   }[interest.icon];
                   return (
-                    <Card key={idx} className="p-5 bg-white border-slate-100 hover:shadow-md transition-shadow">
+                    <Card key={idx} className="p-5 border-l-4 border-primary hover:shadow-lg transition-shadow">
                       <div className="flex items-center gap-3 mb-3">
                         <div className={`${interest.iconColor}`}>
                           {IconComponent && <IconComponent className="w-5 h-5" />}
@@ -536,7 +542,7 @@ export default function Home() {
       </section>
 
       {/* Awards Section */}
-      <section id="awards" className="py-20 bg-white">
+      <section id="awards" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -544,12 +550,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                <Trophy className="w-5 h-5 text-amber-600" />
-              </div>
-              Honors & Awards
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Recognition</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Honors & Awards</h2>
           </motion.div>
 
           <motion.div
@@ -561,7 +563,7 @@ export default function Home() {
           >
             {awardsData.map((award, idx) => (
               <motion.div key={idx} variants={itemVariants}>
-                <Card className="p-6 hover:shadow-lg transition-shadow h-full">
+                <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow h-full">
                   <div className="text-3xl mb-3">{award.emoji}</div>
                   <h3 className="font-bold text-foreground mb-1">{award.title}</h3>
                   <p className="text-sm text-muted-foreground mb-2">{award.issuer}, {award.year}</p>
@@ -574,7 +576,7 @@ export default function Home() {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="py-20 bg-white">
+      <section id="publications" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -582,12 +584,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                <Mic className="w-5 h-5 text-purple-600" />
-              </div>
-              Publications & Presentations
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Publications</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Publications & Presentations</h2>
           </motion.div>
 
           <motion.div
@@ -599,7 +597,7 @@ export default function Home() {
           >
             {/* Webinars */}
             <motion.div variants={itemVariants}>
-              <Card className="p-6 bg-white h-full">
+              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow h-full">
                 <h3 className="text-sm font-medium text-purple-600 mb-4">Invited Talks</h3>
                 <div className="space-y-4">
                   {webinarsData.map((webinar, idx) => (
@@ -620,7 +618,7 @@ export default function Home() {
             
             {/* Articles */}
             <motion.div variants={itemVariants}>
-              <Card className="p-6 bg-white h-full">
+              <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow h-full">
                 <h3 className="text-sm font-medium text-purple-600 mb-4">Technical Articles</h3>
                 <div className="space-y-4">
                   {articlesData.map((article, idx) => (
@@ -642,7 +640,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-slate-50">
+      <section id="projects" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -650,12 +648,9 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
-                <Code2 className="w-5 h-5 text-indigo-600" />
-              </div>
-              Projects
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Portfolio</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Research & Engineering Projects</h2>
+            <p className="text-muted-foreground">Applied research in agentic AI, retrieval-augmented generation, and machine learning</p>
           </motion.div>
 
           <motion.div
@@ -674,13 +669,14 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="block group"
               >
-                <Card className="p-6 bg-gradient-to-br from-slate-50 to-slate-100 border-slate-200 hover:shadow-lg transition-all h-full">
+                <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-all h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className={`w-10 h-10 ${project.iconColor} rounded-lg flex items-center justify-center`}>
-                      {idx === 0 && <Zap className="w-5 h-5 text-white" />}
-                      {idx === 1 && <MessageSquare className="w-5 h-5 text-white" />}
-                      {idx === 2 && <Beaker className="w-5 h-5 text-white" />}
-                      {idx === 3 && <BarChart3 className="w-5 h-5 text-white" />}
+                      {project.icon === "brain" && <Brain className="w-5 h-5 text-white" />}
+                      {project.icon === "zap" && <Zap className="w-5 h-5 text-white" />}
+                      {project.icon === "message" && <MessageSquare className="w-5 h-5 text-white" />}
+                      {project.icon === "beaker" && <Beaker className="w-5 h-5 text-white" />}
+                      {project.icon === "chart" && <BarChart3 className="w-5 h-5 text-white" />}
                     </div>
                     <div className="flex items-center gap-2">
                       <div>
@@ -706,7 +702,7 @@ export default function Home() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-white">
+      <section id="certifications" className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -714,12 +710,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2 flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                <Award className="w-5 h-5 text-blue-600" />
-              </div>
-              Certifications
-            </h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Credentials</p>
+            <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Certifications</h2>
             <p className="text-muted-foreground">Professional certifications and credentials</p>
           </motion.div>
 
@@ -730,7 +722,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <motion.div variants={itemVariants}>
-              <Card className="p-8">
+              <Card className="p-8 border-l-4 border-primary hover:shadow-lg transition-shadow">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {certificationsData.map((cert, idx) => (
                     <a 
@@ -740,7 +732,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="flex items-start gap-3 group hover:bg-slate-50 p-2 -m-2 rounded-lg transition-colors"
                     >
-                      <span className="text-accent mt-1">✓</span>
+                      <span className="text-primary mt-1">✓</span>
                       <div>
                         <p className="font-semibold text-foreground group-hover:text-primary transition-colors flex items-center gap-1">
                           {cert.name}
@@ -758,7 +750,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0 }}
@@ -766,6 +758,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-12"
           >
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Expertise</p>
             <h2 className="text-4xl [font-family:Poppins] font-bold text-foreground mb-2">Technical Skills</h2>
             <p className="text-muted-foreground">Technologies and tools I work with</p>
           </motion.div>
@@ -779,12 +772,12 @@ export default function Home() {
           >
             {Object.entries(skillsData).map(([category, skills], idx) => (
               <motion.div key={idx} variants={itemVariants}>
-                <Card className="p-6 h-full">
+                <Card className="p-6 border-l-4 border-primary hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg [font-family:Poppins] font-bold text-foreground mb-4">{category}</h3>
                   <div className="space-y-2">
                     {skills.map((skill, i) => (
                       <p key={i} className="text-muted-foreground flex items-center gap-2">
-                        <span className="w-2 h-2 bg-accent rounded-full"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
                         {skill}
                       </p>
                     ))}
@@ -797,7 +790,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+      <section id="contact" className="py-20 bg-gradient-to-br from-primary to-blue-600 text-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

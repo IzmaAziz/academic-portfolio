@@ -2,6 +2,8 @@
 
 A modern, responsive academic portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
+**Live site:** https://izmaaziz.github.io/academic-portfolio/
+
 ## Project Structure
 
 ```
@@ -61,7 +63,7 @@ You can also trigger a deployment manually:
 
 After deployment, your site will be available at:
 ```
-https://<your-username>.github.io/<repo-name>/
+https://izmaaziz.github.io/academic-portfolio/
 ```
 
 ---
@@ -191,7 +193,7 @@ All theme colors are defined in `client/src/index.css` using CSS variables:
   --accent-foreground: #0c4a6e;  /* Text on accent background */
   --background: #ffffff;         /* Page background */
   --foreground: #1e293b;         /* Main text color */
-  --card: #f8fafc;              /* Card background */
+  --card: #ffffff;              /* Card background */
   --card-foreground: #1e293b;    /* Card text color */
   --muted: #e2e8f0;             /* Muted backgrounds */
   --muted-foreground: #64748b;   /* Muted text */
